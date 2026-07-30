@@ -1,0 +1,6 @@
+{
+  "name": "Cichoski & Tasso Advocacia",
+  "description": "Website institucional de advocacia estratégica e personalizada, com agendamentos de consultas e gerenciamento de demandas judiciais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
