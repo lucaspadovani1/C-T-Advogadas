@@ -14,7 +14,7 @@ export default function AccountRecoveryAnalyzer({ onAnalyzeSuccess }: AccountRec
   };
 
   return (
-    <section id="recuperador" className="py-24 bg-primary-moss-dark text-white relative overflow-hidden">
+    <section id="recuperador" className="py-24 bg-[#4A5D28] dark:bg-[#4A5D28] text-white relative overflow-hidden">
       {/* Background patterns */}
       <div className="absolute inset-0 bg-linear-gradient-to-r from-black/20 via-transparent to-black/10 pointer-events-none" />
       
@@ -58,17 +58,17 @@ export default function AccountRecoveryAnalyzer({ onAnalyzeSuccess }: AccountRec
           </div>
 
           {/* Informative Legal Rights & Action Card (7 columns) */}
-          <div className="lg:col-span-7 bg-white text-brand-charcoal p-6 sm:p-10 rounded-2xl shadow-2xl relative border border-white/15">
+          <div className="lg:col-span-7 bg-white dark:!bg-[#171a1a] text-brand-charcoal dark:text-white p-6 sm:p-10 rounded-2xl shadow-2xl relative border border-outline-variant/15 dark:border-white/15">
             <div className="space-y-6">
-              <div className="flex items-center gap-3 border-b border-outline-variant/20 pb-4">
-                <div className="p-2.5 bg-primary-brand/10 rounded-lg text-primary-brand">
+              <div className="flex items-center gap-3 border-b border-outline-variant/20 dark:border-white/15 pb-4">
+                <div className="p-2.5 bg-primary-brand/10 dark:bg-white/10 rounded-lg text-primary-brand dark:text-[#8fae54]">
                   <ShieldAlert className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-serif-headline text-xl font-bold text-primary-moss-dark">
+                  <h3 className="font-serif-headline text-xl font-bold text-primary-moss-dark dark:text-white">
                     Direitos de Reativação e Medidas Urgentes
                   </h3>
-                  <p className="text-xs text-brand-text-muted">
+                  <p className="text-xs text-brand-text-muted dark:text-white/70">
                     Atuação rápida baseada no Marco Civil da Internet e Código de Defesa do Consumidor
                   </p>
                 </div>
@@ -77,48 +77,48 @@ export default function AccountRecoveryAnalyzer({ onAnalyzeSuccess }: AccountRec
               <div className="space-y-5">
                 {/* Viability highlights */}
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="p-4 bg-brand-cream/60 rounded-xl border border-outline-variant/25 space-y-1">
-                    <span className="text-[11px] uppercase text-brand-text-muted tracking-wider block font-semibold">
+                  <div className="p-4 bg-brand-cream/60 dark:!bg-white/5 rounded-xl border border-outline-variant/25 dark:border-white/10 space-y-1">
+                    <span className="text-[11px] uppercase text-brand-text-muted dark:text-[#8fae54] tracking-wider block font-semibold">
                       Base Jurídica Utilizada
                     </span>
-                    <span className="text-sm font-bold text-primary-moss-dark block">
+                    <span className="text-sm font-bold text-primary-moss-dark dark:text-white block">
                       Art. 19 do Marco Civil da Internet
                     </span>
-                    <p className="text-xs text-brand-secondary font-light">
+                    <p className="text-xs text-brand-secondary dark:text-white/80 font-light">
                       Ausência de contraditório prévio e falhas de segurança da plataforma.
                     </p>
                   </div>
 
-                  <div className="p-4 bg-brand-cream/60 rounded-xl border border-outline-variant/25 space-y-1">
-                    <span className="text-[11px] uppercase text-brand-text-muted tracking-wider block font-semibold">
+                  <div className="p-4 bg-brand-cream/60 dark:!bg-white/5 rounded-xl border border-outline-variant/25 dark:border-white/10 space-y-1">
+                    <span className="text-[11px] uppercase text-brand-text-muted dark:text-[#8fae54] tracking-wider block font-semibold">
                       Via Judicial de Urgência
                     </span>
-                    <span className="text-sm font-bold text-primary-moss-dark block">
+                    <span className="text-sm font-bold text-primary-moss-dark dark:text-white block">
                       Liminar Judicial (5 a 15 dias úteis)
                     </span>
-                    <p className="text-xs text-brand-secondary font-light">
+                    <p className="text-xs text-brand-secondary dark:text-white/80 font-light">
                       Pedido de reativação imediata sob pena de multa diária contra as redes.
                     </p>
                   </div>
                 </div>
 
                 {/* Emergency Tips Box */}
-                <div className="bg-amber-500/10 border border-amber-500/25 p-5 rounded-xl space-y-2">
-                  <div className="flex items-center gap-2 text-amber-800 font-bold text-xs uppercase tracking-wide">
-                    <AlertTriangle className="w-4 h-4 text-amber-600" />
+                <div className="bg-amber-500/10 border border-amber-500/25 dark:!bg-amber-500/10 dark:border-amber-500/20 p-5 rounded-xl space-y-2">
+                  <div className="flex items-center gap-2 text-amber-800 dark:text-amber-300 font-bold text-xs uppercase tracking-wide">
+                    <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400" />
                     Recomendações Emergenciais Iniciais
                   </div>
-                  <ul className="space-y-2 text-xs text-brand-charcoal font-light leading-relaxed">
+                  <ul className="space-y-2 text-xs text-brand-charcoal dark:text-white/90 font-light leading-relaxed">
                     <li className="flex gap-2">
-                      <span className="font-bold text-amber-700">•</span>
+                      <span className="font-bold text-amber-700 dark:text-amber-400">•</span>
                       <span><strong>Hack/Invasão:</strong> Registre imediatamente o Boletim de Ocorrência Eletrônico por Invasão de Dispositivo (Art. 154-A do CP).</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="font-bold text-amber-700">•</span>
+                      <span className="font-bold text-amber-700 dark:text-amber-400">•</span>
                       <span><strong>Evidências:</strong> Salve prints de faturamento, e-mails automáticos de alteração de senha e mensagens de suporte.</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="font-bold text-amber-700">•</span>
+                      <span className="font-bold text-amber-700 dark:text-amber-400">•</span>
                       <span><strong>Alerta:</strong> NUNCA pague resgates ou tente negociar com criminosos digitais.</span>
                     </li>
                   </ul>
@@ -128,7 +128,7 @@ export default function AccountRecoveryAnalyzer({ onAnalyzeSuccess }: AccountRec
                 <div className="pt-2">
                   <button
                     onClick={handleApplyToForm}
-                    className="w-full bg-primary-brand hover:bg-primary-brand-hover text-white text-xs font-bold tracking-wider uppercase py-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md transform hover:scale-[1.01] active:scale-95 cursor-pointer"
+                    className="w-full bg-primary-brand hover:bg-primary-brand-hover dark:!bg-[#6c863b] dark:hover:!bg-[#7c9a44] text-white text-xs font-bold tracking-wider uppercase py-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md transform hover:scale-[1.01] active:scale-95 cursor-pointer"
                   >
                     <ClipboardCheck className="w-4 h-4" />
                     Solicitar Assessoria para Reativação de Conta

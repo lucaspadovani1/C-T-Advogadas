@@ -1,5 +1,11 @@
 import { Lawyer, PracticeArea, JuridicalTese } from "./types";
 
+import milenaImage from "./assets/images/milena.jpeg";
+import rafaelaImage from "./assets/images/rafaela.png";
+import kipaoLogo from "./assets/images/kipao.jpg";
+import ecosmeticosLogo from "./assets/images/Ecosmeticos.jpg";
+import fontanaLogo from "./assets/images/logo fontana.jpg";
+
 export const LAWYERS: Lawyer[] = [
   {
     id: "milena",
@@ -7,7 +13,7 @@ export const LAWYERS: Lawyer[] = [
     role: "Sócia-Fundadora",
     oab: "OAB/PR 117.992",
     description: "Especialista em Direito do Consumidor.",
-    imageUrl: "/src/assets/images/milena.jpeg",
+    imageUrl: milenaImage,
     imagePosition: "center 15%",
     email: "milena@cichoskietassoadv.com.br",
     specialties: [
@@ -30,7 +36,7 @@ export const LAWYERS: Lawyer[] = [
     role: "Sócia-Fundadora",
     oab: "OAB/PR 126.969",
     description: "Especialista em Direito do Trabalho e Direito Imobiliário.",
-    imageUrl: "/src/assets/images/rafaela.png",
+    imageUrl: rafaelaImage,
     email: "rafaela@cichoskietassoadv.com.br",
     specialties: [
       "Direito do Trabalho (Reclamatórias, Defesas Patronais, Rescisões, Horas Extras)",
@@ -242,7 +248,19 @@ export const OFFICE_CONTACT = {
 };
 
 export const PARTNERS = [
-  { name: "Panificadora Kipão", subtitle: "Cliente Corporativo", logoUrl: "/src/assets/images/kipao.jpg" },
-  { name: "Ecosmeticos", subtitle: "Cliente Corporativo", logoUrl: "/src/assets/images/Ecosmeticos.jpg" },
-  { name: "Fontana Oro", subtitle: "Cliente Corporativo", logoUrl: "/src/assets/images/logo fontana.jpg" }
+  {
+    name: "Panificadora Kipão",
+    subtitle: "Cliente Corporativo",
+    logoUrl: kipaoLogo
+  },
+  {
+    name: "Ecosmeticos",
+    subtitle: "Cliente Corporativo",
+    logoUrl: ecosmeticosLogo
+  },
+  {
+    name: "Fontana Oro",
+    subtitle: "Cliente Corporativo",
+    logoUrl: fontanaLogo
+  }
 ];
